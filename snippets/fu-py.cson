@@ -15,7 +15,7 @@
     'body': 'print("$1")$2'
 
   'class init':
-    'prefix': 'class_init'
+    'prefix': 'fu-classinit'
     'body': """
       class ${1Classname}(object):
 
@@ -25,10 +25,30 @@
     """
 
   'add -> map':
-    'prefix': 'map_add'
+    'prefix': 'fu-map_add'
     'body': """
       def func(element):
         return element + 1
 
       new_lst = map(func,lst)
     """
+
+  '__magic__':
+    'prefix': '__'
+    'body': '__${1:init}__'
+
+  'Dictionary Comprehension':
+    'prefix': 'fu-dc'
+    'body': '{${1:key}: ${2:value} for ${3:key}, ${4:value} in ${5:variable}}'
+
+  'New Function':
+    'prefix': 'fu-def'
+    'body': 'def ${1:fname}(${2:arg}):\n\t${3:pass}'
+
+  'From/Import':
+    'prefix': 'fu-fim'
+    'body': 'from ${1:package/module} import ${2:names}'
+
+  'for':
+    'prefix': 'fu-for'
+    'body': 'for ${1:value} in ${2:variable}:\n\t${3:pass}'
