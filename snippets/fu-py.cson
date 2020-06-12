@@ -1,0 +1,34 @@
+'.source.python':
+  'IfElifElse':
+    'prefix': 'if_elif_else'
+    'body': """
+      if ${1:true}:
+          $2
+      elif ${3:false}:
+          $4
+      else:
+          $5
+      $6
+    """
+  'MyPrint':
+    'prefix': 'print'
+    'body': 'print("$1")$2'
+
+  'class init':
+    'prefix': 'class_init'
+    'body': """
+      class ${1Classname}(object):
+
+        def __init__(self):
+          ${2pass}
+      $3
+    """
+
+  'add -> map':
+    'prefix': 'map_add'
+    'body': """
+      def func(element):
+        return element + 1
+
+      new_lst = map(func,lst)
+    """

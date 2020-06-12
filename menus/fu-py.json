@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle fu-py",
+        "command": "fu-py:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "fu-py",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "fu-py:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
