@@ -35,21 +35,27 @@
 
   '#!/usr/bin/env python':
     'prefix': 'env'
+    'leftLabelHTML': '<span style="color:#a6a616">Py</span>'
     'body': '#!/usr/bin/env python\n'
   '#!/usr/bin/env python3':
     'prefix': 'env3'
+    'leftLabelHTML': '<span style="color:#a6a616">Py</span>'
     'body': '#!/usr/bin/env python3\n'
   '# coding=utf-8':
     'prefix': 'enc'
+    'leftLabelHTML': '<span style="color:#a6a616">Py</span>'
     'body': '# -*- coding: utf-8 -*-\n'
   'Import':
     'prefix': 'im'
+    'leftLabelHTML': '<span style="color:#a6a616">Py</span>'
     'body': 'import ${1:package/module}'
   'From/Import':
     'prefix': 'fim'
+    'leftLabelHTML': '<span style="color:#a6a616">Py</span>'
     'body': 'from ${1:package/module} import ${2:names}'
   'Assert Equal':
     'prefix': 'ase'
+    'leftLabelHTML': '<span style="color:#a6a616">Py</span>'
     'body': 'self.assertEqual(${1:expected}, ${2:actual}${3:, \'${4:message}\'})$0'
   'Assert Not Equal':
     'prefix': 'asne'
